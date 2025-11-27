@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins CI/CD Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Jenkins CI/CD Demo</h1>
+            <p class="subtitle">Automated Deployment Pipeline</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>Welcome to the Demo!</h2>
+                <p>This application is automatically deployed using Jenkins.</p>
+                <p>Every time you push code to GitHub, Jenkins automatically:</p>
+                <ul>
+                    <li>✅ Checks out the latest code</li>
+                    <li>✅ Builds the application</li>
+                    <li>✅ Runs tests</li>
+                    <li>✅ Deploys to the server</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>Build Information</h2>
+                <div class="info">
+                    <p><strong>Build Number:</strong> <span id="buildNumber">Loading...</span></p>
+                    <p><strong>Deployed At:</strong> <span id="deployTime">Loading...</span></p>
+                    <p><strong>Version:</strong> <span id="version">1.0.0</span></p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Test the Pipeline</h2>
+                <p>Try making changes to this page and push to GitHub!</p>
+                <button onclick="testConnection()">Test Server Connection</button>
+                <div id="result"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Deployed via Jenkins Pipeline | Demo by Future Tech</p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
